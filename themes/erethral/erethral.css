@@ -1,0 +1,74 @@
+.toptable {
+	border: 1px solid #7F7F7F;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+A	{
+	text-decoration: none;
+	cursor: hand;
+	color: #999999;
+}
+A:HOVER {
+	text-decoration: none;
+	cursor: hand;
+	color: #7fa3e0;
+	}
+.bars {
+	background-color: #404040;
+	vertical-align: top;
+}
+.middle {
+	background-color: #404040;
+	vertical-align: top;
+	text-align: left;
+}
+.contents {
+	background-color: #2A2A2A;
+}
+.contentdiv {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.errorhead {
+	font-size: 14pt;
+	font-weight: bolder;
+}
+.menubottoms {
+	background-image: url(./images/menubottoms.jpg);
+	background-repeat: no-repeat;
+}
+.sideleft {
+	background-image: url(./images/sidebg.jpg);
+	background-repeat: repeat-y;
+}
+.sideright {
+	background-image: url(./images/sidebg2.jpg);
+	background-repeat: repeat-y;
+}
+.toptest {
+	background-image: url(./images/toptest.jpg);
+	background-repeat: repeat-x;
+}
+.bottest {
+	background-image: url(./images/bottest.jpg);
+	background-repeat: repeat-x;
+}
+.bold {
+	font-weight:bold;
+}
+.header {
+	font-weight:bold;
+	text-align:center;
+	text-transform:uppercase;
+	border: 1px solid #7F7F7F;
+}
+INPUT {
+			font-family:Verdana, Arial, Helvetica, sans-serif;
+			font-size:11px;
+			border:1px solid #C0C0C0;
+			background-color:#666666;
+			}
+
+INPUT:focus {
+			border:1px solid #666666;
+			}

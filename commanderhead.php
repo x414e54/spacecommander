@@ -1,0 +1,4 @@
+<title>::Space Commander::</title>
+<meta NAME="keywords" CONTENT="Space Commander, anthony bills, anthony, churchill community school, churchill community school sixth form council, churchill, churchill commander, kingsofchaos, space, commander, temporal, laser, chaos, elves, humans, dwarves, orcs, rpg, mmorpg, role playing, game, online game, text based game, armory, mercenaries, spy, attack, army, battle, recruit, spies, spy skill, weapons, messaging, sabotage, recon, intelligence, pnp, mud, games, free, browser game">
+<meta NAME="description" CONTENT="Space Commander Text/Web-Based game similar to some ones already on the internet however this is all my own work and not a copy only principlals are copied.">
+<meta NAME="author" CONTENT="Anthony Bills">

@@ -1,0 +1,152 @@
+Tempoary todo list:
+
+- Bank console so they can adjust intrest rate and view accounts.
+- Spy all works, but there is a random error31 which i have not isolated yet --------------------JON----------------
+- Sort out standing orders.
+
+- Work out best way to limit early bank loans (otherwise you can be powerful very quickly, especially if no one else gets big loans too)
+
+-------------------------------------
+------------NOTICE------------- THE SQL SERVER SEEMED TO BE RUNNING SLOW SO I SWAPPED IT OVER TO ANOTHER ONE - THUS UPDATED CONFIG.PHP AND ADMIN/CONFIG.INC.PHP
+-------------------------------------
+-------------------------------------
+------------NOTICE------------- LARGE UPDATE FILES CHANGED PLEASE SEE WHICH ONES BELOW
+-------------------------------------
+
+Due to the new modularity of the site, if you are doing a task above please place your name next to it so as other people will not do this task as well:
+
+
+Completed tasks: (Move finished tasks here with name tag and date)
+- Weapons.php fixed -------------JON------------- 2302 16th January 2006
+- Sort out effective attack and effective defense - this could possibly be due to an error in weapons.php (As above)
+- Repair setpass.php because it's broken and I can't remember my password and look it up every time ---------------------JON---------------- 2350 16th 
+January 2006
+- Suspicion that passwords will not be able to be changed - something linked incorrectly or does not exist. (As above)
+- Attack and defense believed to be working correctly now ---------------JON---------------- 1314 17th Jan
+- Move the contents of stuff.php into respective files e.g. research.php, or a new file units.php which will be where you can buy hackers, spies      ------------------------ANTHONY--------------------2254 18th Jan
+- In the admin page when "su" 'ing sort out the popup exit box so it logs you out (does this by changing the main page to exit.php or something (see code))  ------------------------ANTHONY--------------------2307 18th Jan
+-- On index page sort out clan submit boxes to affect the registration page.  ------------------------ANTHONY--------------------2334 18th Jan
+- Fix armory code so weapons can be sold (and repaired) - this includes them having correct $responses ------ ANTHONY-------------- 1709 23rd Jan2006
+
+
+Any new files editied please write below:
+===Assume all files are new as of 2056 15th Jan 2006===
+
+===2100 15th Jan 2006===
+navbar.php - links changed to setpass.php and setname.php
+setname.php - new file
+setpass.php
+
+===2302 16th Jan 2006===
+weapons.php - indices changed to names
+main.php - probably nothing changed at all, but i'm not certain.
+
+===2350 16th Jan 2006===
+setpass.php - added session_start() and moved a ;/"
+navbar.php - removed name change text box
+setname.php - made it work, now useless and deletable
+user.php - edited to remove reference to Real Name
+
+===1314 17th Jan 2006===
+attack.php - fixed weapon health problems, misnamed variables and array references
+main.php - probably not changed, but i'm not certain again
+weapons.php - misnamed variables changed so stuff works
+
+===1341 17th Jan 2006===
+spy.php - fixed to display correct attack and defense data. Previously displayed zero for attack.
+
+===2253 18th Jan 2006===
+units.php - New file current place for buying spies and hackers code
+research.php - Changed to now contain the code for buying research/upgrading attack/defense technologies
+randd.php - The HTML/GUI page for the research as I wanted the two pages seperated.
+navbar.php - Changed to now link to randd isntead of research
+main.php - Changed so now buing hackers and spies will post to units.php
+main.php - Also you can now no longer destroy the universe, as i thought this was pointless and nobody ever had enough money
+
+===2307 18th Jan 2006===
+admin.php - Changed so the popup window is a different size
+exit.php - changed so that it will effect the parent "opener" window
+
+===2334 18th Jan2006===
+register.php - Edited so index clan selection boxes would effect choice
+
+==1545 19th Jan2006===
+config.php - Changed to refelect new sql server
+admin/config.inc.php - Changed to refelect new sql server
+
+===1606 19th Jan2006===
+add.php - Deletes entries from pending greater than 30mins
+activate.php - Deletes entries from pending greater than 30mins
+register.php -  adds time to pending users
+
+===1708 19th Jan2006===
+resend.php - New file that will resend your activation e-mail address as some people ahve not been receiving this
+register.php - Form to resend e-mail address.
+
+===2036 20th Jan2006==
+index.php - changed to allow for themes
+login.php - changed to allow for themes
+bar.php - new to allow for themes
+stats.php - new to allow for themes
+online.php - new to allow for themes
+navbar.php -  changed to allow for themes
+outbar.php - changed to allow for themes
+content.php - new to allow for themes
+themes/ - new to allow for themes
+inbox.php - new to allow for themes
+commanderhead.php - new to allow for themes
+admin.php - changed as announce bar was too big
+userstats.php - new to allow for themes
+bank.php - updated so it would fit better on the page
+main.php - updated so it would fit better on the page (colspan=3)
+news.php - new news page
+
+===0031 20th Jan2006===
+activate.php - Changed to refelect new name of primary bank
+register.php - Changed to refelect new name of game
+resend.php - Changed to refelect new name of game
+admin.php  - Changed to refelect new name of primary bank
+register.php - Planet names are now unique
+time.php - Script stolen from flat47.com as it uses similar database and php this will crudely minus one hour from the time of posted news
+chat,register,rankings,rules.php - all changed so that the will relink back to index with a specific include if they are opened by a person that is not logged in
+
+===1251 21st Jan 2006===
+spy.php - Added naming variable for attack weapons. 
+
+===1520 22nd Jan2006===
+music.php - new so music does not take up space at the top of the bar
+setpass.php - did not return to index page but previous
+repair.php - Works but do not give correct responeses when done/if there was an error just go back to armoury page
+remove.php - Works but do not give correct responeses when done/if there was an error just go back to armoury page
+armory.php - found bug where new code counts a non existant $_SESSION("username") as "" username and password as "" so therefore they match and the page will loadd
+                   with a non existant user - bug will carry through most pages - easy to check by just checking for an empty session
+
+===1720 23rd Jan 2006===
+repair.php - Fixed
+remove.php - Fixed
+armory.php - Changed to relate to fixes
+moderator.php - announce box too big 100->50
+
+===1928 23rd Jan 2006===
+research.php - people could buy defense level regardless of credits thus they went into minus money
+
+===1355 24th Jan 2006==
+register.php - poeople cna now choose a random planet to join
+planet.php - Now lists other planets if you need to
+galaxy.php - Now lists planets in your area
+navbar.php - Changed to include galaxy link
+story.php - This is the story of commander
+machinestory.php - This is the story of commander
+clans.php - dunno but it was changed
+news.php - dunno but it was changed
+activate.php -
+
+Long term:
+==========================================================
+New site design (consoles, e.g. alien, machine, human console - star trek like)
+Preferably three completly different designs by three completly different people.
+-----
+Alien                    = Richard will be doing this
+Machine               = 
+Human                 =
+==========================================================

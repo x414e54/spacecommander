@@ -1,0 +1,148 @@
+BODY 			{ 
+			background: url('./images/bg.gif');
+			text-align: center;
+			font-family: arial;
+			font-weight: normal;
+			color: black;
+			scrollbar-3dlight-color: #2952A5;
+			scrollbar-arrow-color: #2952A5;
+			scrollbar-base-color: #2952A5;
+			scrollbar-darkshadow-color: #08215A;
+			scrollbar-face-color: #103173;
+			scrollbar-highlight-color: #84A2DE;
+			scrollbar-track-color: #2952A5;
+			scrollbar-shadow-color: #08215A;
+			}
+A			{
+			text-decoration: none;
+			cursor: hand;
+			color: black;
+			}
+A:HOVER			{
+			text-decoration: none;
+			cursor: hand;
+			color: black;
+			background: #2952A5;
+			}
+#EDIT			{
+			font-size: 6pt;
+			}
+#MEDIUM			{
+			font-size: 10pt;
+			}
+#BOLD			{
+			font-weight: bold;
+			}
+#TAB			{	
+			font-size: 12pt;
+			font-weight: normal;
+			font-family: times;
+			text-align: left;
+			color: black;
+			font-family: Lucida Console;
+			}
+#COLOURC		{
+			color: black;
+			font-size: 8pt;
+			}
+INPUT			{
+			color: black;
+			background: #2952A5;
+			font-size: 8pt;
+			border-width: 1px;
+			border-color: #08215A;
+			}
+TEXTAREA		{
+			color: black;
+			background: #2952A5;
+			font-size: 8pt;
+			border-width: 1px;
+			border-color: #08215A;
+			overflow: hidden;
+			}
+SELECT			{
+			color: black;
+			background: #2952A5;
+			font-size: 8pt;
+			border-width: 1px;
+			border-color: #08215A;
+			}
+#MAINTOP		{	
+			text-align: center;
+			font-size: 16pt;
+			font-family: arial black;
+			color: #2952A5;
+			}
+#MAINCONTENT		{ 
+			text-align: center;
+			font-family: arial;
+			font-weight: bolder;
+			color: blue;
+			}
+TABLE			{ 
+			background: none;
+			}
+#TABLEHEAD		{ 
+			font-size: 12pt;
+			font-family: arial;
+			font-weight: normal;
+			background: #2952A5;
+			color: black;
+			}
+#NAVBAR			{ 
+			color: black;
+			text-align: center;
+			font-family: arial;
+			font-weight: normal;
+			word-wrap: break-word;
+			}
+#NEWSTABLETOP		{ 
+			background: blue;
+			text-align: left;
+			font-family: arial;
+			font-weight: bolder;
+			word-wrap: break-word;
+			color: black;
+			}
+#NEWSTABLE		{ 
+			background: blue;
+			text-align: left;
+			font-family: arial;
+			word-wrap: break-word;
+			font-weight: bolder;
+			color: black;
+			}
+#NEWSTABLEMAIN2		{ 
+			background: black;
+			text-align: left;
+			font-family: arial;MAINTOP
+			font-weight: bolder;
+			color: blue;
+			}
+#PAGEHEAD		{ 
+			background: black;
+			text-align: center;
+			font-size: 20pt;
+			font-family: arial;
+			font-weight: bolder;
+			color: #2952A5;
+			}
+#ERRORHEAD		{ 
+			text-align: left;
+			font-size: 20pt;
+			font-family: arial;
+			font-weight: bolder;
+			color: #2952A5;
+			}
+#LEFT			{
+			text-align: left;
+			}
+#RIGHT
+			{
+			text-align: right;
+			}
+#LINKS			{
+			text-align: center;
+			font-family: arial black;
+			color: #2952A5;
+			}

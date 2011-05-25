@@ -1,0 +1,1 @@
+<div class="header">Space Commander: The Begining</div><br>Far in the future from now three Species fight against each other for total control of the universe. They colonise planets in different galaxies in their attempt to take over<br><Br>So far Earth is safe, but for how long?<br><br>Please log into your account to read the story specific to your species.

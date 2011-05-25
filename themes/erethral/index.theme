@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<? session_start(); include('./commanderhead.php'); ?>
+<style type="text/css">
+<!--
+body {
+	background-color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	margin-top:0px;
+	color: #999999;
+	text-align:left;
+}
+-->
+</style>
+<link href="./themes/erethral/erethral.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+
+<body background="./themes/erethral/images/bg.jpg" topmargin=0 leftmargin=0 onload="<? if ($_SESSION["music"]!=1) { ?>music()<? }?>;MM_preloadImages('./themes/erethral/images/home1.jpg','./themes/erethral/images/help1.jpg','./themes/erethral/images/rankings1.jpg','./themes/erethral/images/story1.jpg','./themes/erethral/images/forum1.jpg','./themes/erethral/images/credits1.jpg')">
+<table width="846px" border="0" align="center" cellspacing="0" cellpadding="0" class="toptable" height="1200px">
+  <tr>
+    <td valign="top" class="sideleft" width="26px">&nbsp;</td>
+	<td valign="top" width="794px"><table width="760" border="0" cellspacing="0" cellpadding="0" height="1200px">
+      <tr>
+        <td height="95"><img src="./themes/erethral/images/barleft.jpg" width="198" height="29"><a href="./index.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('homeimg','','./themes/erethral/images/home1.jpg',1)"><img src="./themes/erethral/images/home0.jpg" alt="Home" name="homeimg" width="66" height="29" border="0"></a><a href="./help.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('helpimg','','./themes/erethral/images/help1.jpg',1)"><img src="./themes/erethral/images/help0.jpg" alt="Help" name="helpimg" width="50" height="29" border="0"></a><a href="./ranking.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('rankingsimg','','./themes/erethral/images/rankings1.jpg',1)"><img src="./themes/erethral/images/rankings0.jpg" alt="Rankings" name="rankingsimg" width="85" height="29" border="0"></a><a href="./story.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('storyimg','','./themes/erethral/images/story1.jpg',1)"><img src="./themes/erethral/images/story0.jpg" alt="Story" name="storyimg" width="60" height="29" border="0"></a><a href="http://forum.anthonybills.com" target="_new" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('forumimg','','./themes/erethral/images/forum1.jpg',1)"><img src="./themes/erethral/images/forum0.jpg" alt="Forum" name="forumimg" width="62" height="29" border="0"></a><a href="./credits.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('creditsimg','','./themes/erethral/images/credits1.jpg',1)"><img src="./themes/erethral/images/credits0.jpg" alt="Credits" name="creditsimg" width="92" height="29" border="0"></a><img src="./themes/erethral/images/barright.jpg" width="180" height="29"></td>
+      </tr>
+	   <tr>
+        <td height="26" class="toptest"></td>
+      </tr>
+      <tr>
+        <td><table width="794" border="0" cellpadding="0" cellspacing="0" height="1200px">
+          <tr>
+            <td class="bars" width="157"><table width="155" border="0" cellspacing="0" celpadding="0" cellpadding="0">
+              <tr>
+                <td><img src="./themes/erethral/images/mainmenu.jpg" width="155" height="10"></td>
+              </tr>
+              <tr>
+                <td class="contents"><div class="contentdiv"><? include('./bar.php'); ?></div></td>
+              </tr>
+              <tr>
+                <td><img src="./themes/erethral/images/menubottoms.jpg" width="155" height="10"></td>
+              </tr>
+            </table>
+              <p>&nbsp;</p>
+              <table width="155" border="0" cellspacing="0" celpadding="0" cellpadding="0">
+                <tr>
+                  <td><img src="./themes/erethral/images/inbox.jpg" width="155" height="10"></td>
+                </tr>
+                <tr>
+                  <td class="contents"><div class="contentdiv"><? include('./inbox.php'); ?></div></td>
+                </tr>
+                <tr>
+                  <td><img src="./themes/erethral/images/menubottoms.jpg" width="155" height="10"></td>
+                </tr>
+              </table>              <p>&nbsp;</p>
+              <table width="155" border="0" cellspacing="0" celpadding="0" cellpadding="0">
+                <tr>
+                  <td><img src="./themes/erethral/images/online.jpg" width="155" height="10"></td>
+                </tr>
+                <tr>
+                  <td class="contents"><div class="contentdiv"><? include('./online.php'); ?></div></td>
+                </tr>
+                <tr>
+                  <td><img src="./themes/erethral/images/menubottoms.jpg" width="155" height="10"></td>
+                </tr>
+              </table>              
+              <p>&nbsp;</p>
+              <table width="155" border="0" cellspacing="0" celpadding="0" cellpadding="0">
+                <tr>
+                  <td><img src="./themes/erethral/images/login.jpg" width="155" height="10"></td>
+                </tr>
+                <tr>
+                  <td class="contents"><div class="contentdiv"><? include('./login.php'); ?></div></td>
+                </tr>
+                <tr>
+                  <td><img src="./themes/erethral/images/menubottoms.jpg" width="155" height="10"></td>
+                </tr>
+              </table>
+              <p>&nbsp;</p>
+              <table width="155" border="0" cellspacing="0" celpadding="0" cellpadding="0">
+                <tr>
+                  <td><img src="./themes/erethral/images/stats.jpg" width="155" height="10"></td>
+                </tr>
+                <tr>
+                  <td class="contents"><div class="contentdiv"><? include('./stats.php'); ?></div></td>
+                </tr>
+                <tr>
+                  <td><img src="./themes/erethral/images/menubottoms.jpg" width="155" height="10"></td>
+                </tr>
+              </table> 
+              </td>
+            <td width="464" class="middle"><table width="440" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><img src="./themes/erethral/images/content.jpg" width="474" height="20"></td>
+              </tr>
+              <tr>
+                <td class="contents"><div class="contentdiv"><? include('./content.php'); ?></div></td>
+              </tr>
+              <tr>
+                <td><img src="./themes/erethral/images/contentbottom.jpg" width="474" height="10"></td>
+              </tr>
+            </table></td>
+            <td class="bars" width="155"><table width="155" border="0" cellspacing="0" celpadding="0" cellpadding="0">
+                <tr>
+                  <td><img src="./themes/erethral/images/userstats.jpg" width="155" height="10"></td>
+                </tr>
+                <tr>
+                  <td class="contents"><div class="contentdiv"><? include('./userstats.php'); ?></div></td>
+                </tr>
+                <tr>
+                  <td><img src="./themes/erethral/images/menubottoms.jpg" width="155" height="10"></td>
+                </tr>
+              </table><p>&nbsp;</p>
+	<table width="155" border="0" cellspacing="0" celpadding="0" cellpadding="0">
+                <tr>
+                  <td><img src="./themes/erethral/images/announce.jpg" width="155" height="10"></td>
+                </tr>
+                <tr>
+                  <td class="contents"><div class="contentdiv"><? include('./announcements.php'); ?></div></td>
+                </tr>
+                <tr>
+                  <td><img src="./themes/erethral/images/menubottoms.jpg" width="155" height="10"></td>
+                </tr>
+              </table><p>&nbsp;</p>
+	<table width="155" border="0" cellspacing="0" celpadding="0" cellpadding="0">
+                <tr>
+                  <td><img src="./themes/erethral/images/music.jpg" width="155" height="10"></td>
+                </tr>
+                <tr>
+                  <td class="contents" align="center"><div class="contentdiv"><? include('./music.php'); ?></div></td>
+                </tr>
+                <tr>
+                  <td><img src="./themes/erethral/images/menubottoms.jpg" width="155" height="10"></td>
+                </tr>
+              </table></td>
+          </tr>
+        </table></td>
+      </tr>
+	  <tr>
+        <td height="26" class="bottest"></td>
+      </tr>
+      <tr>
+        <td>Erethral theme for commander.</td>
+      </tr>
+    </table></td>
+    <td valign="top" width="26px" class="sideright">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
